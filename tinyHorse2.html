@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+ul.nav{
+  list-style-type:none;
+  margin:0px;
+  padding:0px;
+  width:100%;
+  height:40px;
+  background-color:#333;
+  color:white;
+  text-align:right;
+  position:fixed;
+}
+
+
+
+.first{
+  width:100%;
+  background-image: url("https://c.stocksy.com/a/MiN900/z9/2236114.jpg?1578014633");
+  height:700px;
+}
+
+.first_par{
+  color:white;
+  font-size:50px;
+  padding:75px;
+
+}
+
+.second{
+  background-color:#ffccff;
+  width:100%;
+  height:600px;
+  margin:0px;
+  padding:0;
+  display:grid;
+  grid-template-rows:100px 400px 100px;
+  grid-template-columns:1fr 1fr 1fr;
+}
+
+.second_par{
+  font-size:30px;
+  text-align:center;
+  margin:auto;
+  display:flex;
+  grid-row:1/2;
+  grid-column:1/4;
+  line-height:75px;
+}
+
+.sec_img1{
+  width:300px;
+  height:250px;
+  display:flex;
+  grid-row:2/3;
+  grid-column:1/2;
+  margin:auto;
+  max-width:100%;
+}
+
+.sec_img2{
+  width:300px;
+  height:250px;
+  display:flex;
+  grid-row:2/3;
+  grid-column:2/3;
+  margin:auto;
+  max-width:100%;
+}
+
+.sec_img3{
+  width:300px;
+  height:250px;
+  display:flex;
+  grid-row:2/3;
+  grid-column:3/4;
+  margin:auto;
+  max-width:100%;
+}
+
+
+
+.sec_imgText1{
+  font-size:30px;
+  margin:auto;
+  display:flex;
+  grid-row:3/4;
+  grid-column:1/2;
+  line-height:0px;
+  text-align:center;
+}
+
+.sec_imgText2{
+  font-size:30px;
+  margin:auto;
+  display:flex;
+  grid-row:3/4;
+  grid-column:2/3;
+  line-height:0px;
+  text-align:center;
+}
+
+.sec_imgText3{
+  font-size:30px;
+  margin:auto;
+  display:flex;
+  grid-row:3/4;
+  grid-column:3/4;
+  line-height:0px;
+  text-align:center;
+}
+
+
+
+.third{
+  display:grid;
+  grid-template-colums:1fr 1fr 1fr;
+  grid-template-rows:1fr 1fr 1fr;
+  width:100%;
+  height:500px;
+  margin:0px;
+}
+
+.third_par1{
+  display:flex;
+  grid-column:1/2;
+  grid-row:2/3;
+  padding:0px;
+  margin:0px;
+  text-align:left;
+  font-size:25px;
+
+}
+
+.third_par2{
+  display:flex;
+  grid-column:2/3;
+  grid-row:2/3;
+  padding:0px;
+  margin:0px;
+  text-align:left;
+  font-size:25px;
+
+}
+
+.third_par3{
+  display:flex;
+  grid-column:3/4;
+  grid-row:2/3;
+  padding:0px;
+  margin:0px;
+  text-align:left;
+  font-size:25px;
+
+}
+
+.third_text1{
+  display:flex;
+  grid-column:1/2;
+  grid-row:3/4;
+  padding:0px;
+  margin:0px;
+  text-align:left;
+  font-size:15px;
+  align-items:center;
+
+}
+
+.third_text2{
+  display:flex;
+  grid-column:2/3;
+  grid-row:3/4;
+  padding:0px;
+  margin:0px;
+  text-align:left;
+  font-size:15px;
+  align-items:center;
+}
+
+.third_text3{
+  display:flex;
+  grid-column:3/4;
+  grid-row:3/4;
+  padding:0px;
+  margin:0px;
+  text-align:left;
+  font-size:15px;
+  align-items:center;
+}
+.fourth{
+  background-image:url("https://i.pinimg.com/originals/93/87/f9/9387f9f7a618486ffd407dd0b471cf62.jpg");
+  width:100%;
+  height:300px;
+  margin:0px;
+  padding:0px;
+  display:grid;
+  grid-template-rows:100px 200px;
+  grid-template-columns:1fr 1fr;
+}
+.fourth_box{
+  display:grid;
+  grid-template-rows:1fr 2fr;
+  grid-template-columns:1fr 1fr;
+
+
+}
+
+.fourth_text1{
+  display:flex;
+  grid-row:1/2;
+  grid-column:1/2;
+  font-size:10px;
+  color:white;
+  line-height:50px;
+  text-align:center;
+}
+
+.fourth_text2{
+  display:flex;
+  grid-row:2/3;
+  grid-column:1/2;
+  font-size:35px;
+  color:white;
+  line-height:100px;
+  text-align:center;
+
+}
+
+.fifth{
+  display:grid;
+  grid-template-columns:1fr 1fr 1fr;
+  grid-template-rows:1fr 1fr 1fr;
+  height:350px;
+  background-color:#333;
+}
+
+.fifth_text1{
+  display:flex;
+  grid-row:2/3;
+  grid-column:2/3;
+  color:white;
+  text-align:left;
+
+}
+
+.fifth_text2{
+  display:flex;
+  grid-row:2/3;
+  grid-column:3/4;
+  color:white;
+  text-align:left;
+
+}
+
+</style>
+
+</head>
+<body>
+  <div class="first">
+
+  <ul class="nav">
+    <li style="display:inline">HOME</li>
+    <li style="display:inline">SERVICES</li>
+    <li style="display:inline">ABOUT</li>
+    <li style="display:inline">CAREERS</li>
+    <li style="display:inline">CONTACT</li>
+  </ul>
+  <div class="first_par">
+    <p>We deliver your story to any<br> audience in the most creative and<br> measurable way</p>
+  </div>
+
+  </div>
+
+  <div class="second">
+    <p class="second_par">We help you win in the media landscape</p>
+    <div class="sec_img1">  <img src="https://pix10.agoda.net/hotelImages/5076278/0/50d5094351a16fa3280555fab4ed3662.jpg?s=1024x768">
+    </div>
+    <div class="sec_img2"> <img src="https://thumbs.dreamstime.com/z/handsome-caucasian-man-work-desk-facing-flat-screen-computer-office-92830003.jpg">
+    </div>
+    <div class="sec_img3"> <img src="https://www.billboard.com/files/styles/article_main_image/public/media/concert-crowd-audience-stock-2019-u-billboard-1548.jpg">
+    </div>
+    <p class="sec_imgText1">Content Production</p>
+    <p class="sec_imgText2">Agency Services</p>
+    <p class="sec_imgText3">Brand Partnerships</p>
+  </div>
+
+  <div class="third">
+
+    <span class="third_par1"><section>"The best in the game. Tiny Horse
+      <br> is strategic, creative, and actually
+      <br>delivers! They're obsessed with
+      <br>helping us win."
+      </section>
+    </span>
+    <span class="third_par2"><section>"Our partnership with Tiny Horse
+      <br>is exceptional. They've been
+      <br>instrumental partners working
+      <br>together to navigate the evolving
+      <br>media landscape."
+      </section>
+    </span>
+    <span class="third_par3"><section>"Tiny Horse surpassed my
+      <br>expectations, not only by
+      <br>successfully launching my TV
+      <br>show, but empowering me
+      <br>creatively on how to leverage new
+      <br>media."
+      </section>
+    </span>
+    <span class="third_text1">LUIS SOTO
+      <br>HEAD OF DGITAL, TELEVISA
+    </span>
+    <span class="third_text2">JULIAN FRANCO
+      <br>HEAD OF AVOD, VUDU/WALMART
+    </span>
+    <span class="third_text3">CRISTINA PALACIO
+      <br>AWARD WINNING WRITER AND PRODUCER
+    </span>
+
+  </div>
+
+  <div class="fourth">
+    <div>
+      <div class="fourth_text1">CONTACT</div>
+      <div class="fourth_text2">Don't be analog, let's connect.</div>
+      </div>
+
+
+
+  </div>
+
+  <div class="fifth">
+    <div class="fifth_text1">6121 SUNSET BLVD<br>
+      <br>LOS ANGELES, CA 90028<br>
+      <br>INFO@TINYHORSE.COM</div>
+    <div class="fifth_text2">LOS ANGELES<br>
+        <br>CHARLOTTE<br>
+        <br>NEW YORK</div>
+  </div>
+
+
+
+</body>
+
+
+</html>
